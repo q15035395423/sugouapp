@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="rem.js"></script>
+	<meta name="viewport" content="width=device-width,inifial-scale:1.0;maximum-scale=1.0,user-scalable=0">
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_471082_2ilbcpko8z392j4i.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/daifukuan.css">
+</head>
+<body>
+		<!-- 头部 -->
+	<header>
+		<a href="geren.html">
+			<div class="head-left">&lt;</div>
+		</a>
+		我的订单
+		<a href="">
+			<div class="head-Rig">
+		  		<i class="iconfont iconfont4 icon-sousuo"></i>
+			</div>
+		</a>
+	</header>
+	<!-- 列表 -->
+	<aside>
+		<a href="">
+		  <div class="aside1">	全部 </div>
+		</a>
+		<a href="#" class="aside1">待付款</a>
+		<a href="#" class="aside1">待发货 </a>
+		<a href="#" class="aside1">已发货 </a>
+		<a href="#" class="aside1">待评价 </a>			
+	</aside>
+	<div class="huanhang"></div>
+	<div class="con concon">
+		<div class="con1">
+			<span>订单编号:24270615</span>
+			<a href="">取消订单</a>
+		</div>
+		<a href="" class="con2">
+			<img src="img/images/xqxq_20.png" alt="">
+			<p>
+				28寸 纯PC"铝框"(非全铝... &nbsp;&nbsp;&nbsp;包裹1)<br>
+				<span class="span1">太空银</span>
+				<span class="span2">待付款</span>
+
+			</p>
+		</a>
+		<div class="con3">
+			<span>应付:¥439元</span>
+			<a href="">付款 <span class="spans">59</span>:<span class="spans">37</span></a>
+		</div>
+	</div>
+	
+</body>
+</html>
+<script>
+		
+		let date = new Date();
+		date.setMinutes(date.getMinutes() + 60)
+		let t = setInterval(move, 1000)
+		move();
+		function move(){
+			let now = new Date();	
+			let time = Math.floor((date.getTime() - now.getTime())/1000)
+
+			let span = document.querySelectorAll('.spans');
+			let span1 = document.querySelectorAll('.span');
+			let arr = [];
+		//  秒差/60得到分,取整
+			let fen = Math.floor(time/60)
+			arr.push(fen)
+			// 对不够一分的数取余,取整为秒
+			time %= 60;
+			let miao = Math.floor(time)
+			arr.push(miao)
+
+			// 遍历页面span,给span依次添加数组里的fen,miao
+			span.forEach(function(ele,index){
+				ele.innerText = arr[index];
+			})
+			console.log(span1)
+			span1.forEach(function(ele,index){
+				ele.innerText = arr[index];
+			})	
+		}
+
+</script>

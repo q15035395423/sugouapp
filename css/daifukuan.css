@@ -1,0 +1,142 @@
+@import url('base.css');
+body{
+	background-color: #f4f4f4;
+}
+
+header{
+	width: 100%;
+	height: 1.39rem;
+	box-sizing: border-box;
+	font-size: 0.4rem;
+	text-align: center;
+	background-color: #FAFAFA;
+	color: #000;
+	line-height: 1.39rem;
+}
+.head-left{
+	width: 1.4rem;
+	height: 0.79rem;
+	float: left;
+	line-height: 1.39rem;
+	font-size: 0.5rem;
+		color: #999;
+}
+
+.head-Rig{   
+	width: 1.7rem; 
+	height: 0.79rem;
+	float: right;
+	line-height:1.5rem;
+}
+.iconfont{
+	font-size: 0.4rem;
+	color: #999;
+}
+aside{
+	width: 100%;
+	height: 0.93rem;
+	background:#fafafa;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-around;
+
+}
+.aside1{
+	width: auto;
+	height: 0.93rem;
+	display: block;
+	font-size: 0.3rem;
+	color: #000;
+	padding-top: 0.26rem;
+	text-align: center;
+}
+aside .aside1:first-child{   
+	color: #b4292f;
+	box-sizing: border-box;
+	border-bottom: 0.06rem solid #B4292F;
+}
+.huanhang{
+	width: 100%;
+	height: 0.2rem;
+}
+.con{
+	width: 100%;
+	height: 4rem;
+	background-color: #fff;
+}
+.con1{
+	width: 6.9rem;
+	height: 0.95rem;
+	border-bottom: 1px solid #d6d6d6;
+	float: right;
+	line-height: 0.95rem;
+	padding-right: 0.3rem;
+}
+.con1 span{
+	font-size: 0.28rem;
+	float: left;
+}
+.con1 a{
+	font-size: 0.28rem;
+	float: right;
+}
+.con2{
+	display: block;
+	width: 6.9rem;
+	height: 1.71rem;
+	border-bottom: 1px solid #d6d6d6;
+	float: right;
+	padding-right: 0.3rem;
+	padding-top: 0.24rem;
+}
+.con2 img{
+	width:1.48rem;
+	height: 1.44rem;
+	float: left; 
+}
+.con2 p{
+	float: right;
+	font-size: 0.3rem;
+	padding-left: 0.4rem;
+	line-height: 0.4rem;
+	margin-top: 0.3rem;
+}
+.con2 .span1{
+	font-size: 0.28rem;
+	line-height: 0.7rem;
+	color: #afafaf;
+	float: left;
+}
+.con2 .span2{
+	font-size: 0.28rem;
+	line-height: 0.7rem;
+	color: #a70208;
+	float: right;
+}
+.con3{
+	display: block;
+	width: 6.9rem;
+	height: 0.8rem;
+	float: right;
+	padding-right: 0.3rem;
+	padding-top: 0.25rem;
+}
+.con3 span{
+	font-size: 0.3rem;
+	line-height: 0.65rem;
+}
+.con3 a{
+	font-size: 0.28rem;
+	color: #fff;
+	text-align: center;
+	line-height: 0.65rem;
+	display: block;
+	width: 2.1rem;
+	height: 0.65rem;
+	float: right;
+	background-color: #b4282d;
+	border-radius: 0.1rem;
+}
+.concon{
+	margin-top: 0.2rem;
+}

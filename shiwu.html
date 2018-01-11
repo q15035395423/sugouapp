@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,inifial-scale:1.0;maximum-scale=1.0,user-scalable=0">
+	<title>识物</title>
+	<script src="rem.js"></script>
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_471082_nl4fn3pz91he61or.css">
+	<link rel="stylesheet" href="css/shiwu.css">
+	<script src="js/jquerys.js"></script>
+</head>
+<body>
+	<div class="top">识物</div>
+	<a class="a1"href="">
+		<img src="img/ztimg.png" alt="">
+	</a>
+	<div class="tuijian">
+	<div class="tuijian1">
+		<a href="">
+          	<img src="img/zhuanti1 (1).png" alt="">趣购推荐
+       	</a>
+       	   
+   	  	<a href="">
+ 	     	<img src="img/banner22.png" alt="">挑款师推荐
+      	</a>
+       	   
+   	 	<a href="">
+          	<img src="img/cai_05.png" alt=""> 丁磊私物推荐
+       	</a>
+       	  
+   	  	<a href="">
+          	<img src="img/123.png" alt="">趣购LOL
+        </a> 
+        <a href="">
+          	<img src="img/2.png" alt="">趣购推荐
+       	</a>
+       	   
+   	  	<a href="">
+ 	     	<img src="img/zhuanti1 (1).png" alt="">挑款师推荐
+      	</a>
+       	   
+   	 	<a href="">
+          	<img src="img/5.png" alt=""> 丁磊私物推荐
+       	</a>
+       	  
+   	  	<a href="">
+          	<img src="img/zhuanti1 (1).png" alt="">趣购LOL
+        </a>  	   
+	</div>
+	</div>
+	<div class="huanhang1"></div>
+	<h2>为你推荐</h2>
+	<a href="" class="tuijian2">
+		<img src="img/tuijian2_03.png" alt="">
+		<span>没吃过它们 , 今年算白胖了 , 9.9元起 </span><br>
+		<span>99元任选9件</span>
+	</a>
+   <a href="">
+	    <div class="tuijian3">
+	        <div class="tuijianleft">
+	            配件组：洋洋
+	            <p>乐福鞋，趿着穿也时髦</p>
+	            <p>今年时尚界各大品牌的秋冬鞋包中，金属扣的设计几乎无处...</p>
+
+	        </div>
+	        <div class="tuijianimg">
+	            <img src="img/xiezi22.png" alt="">
+	        </div>
+	    </div>
+    </a>
+    <a href="">
+	     <div class="tuijian3 tuijian4">
+	        <div class="tuijianleft">
+	            配件组：洋洋
+	            <p>乐福鞋，趿着穿也时髦</p>
+	            <p>今年时尚界各大品牌的秋冬鞋包中，金属扣的设计几乎无处...</p>
+
+	        </div>
+	        <div class="tuijianimg">
+	            <img src="img/dlei_45.png" alt="">
+	        </div>
+	    </div>
+    </a>
+    <div class="huanhang1 huanhang2"></div>
+    <!-- foot开始 -->
+	<div class="foot">
+		<a href="index.html" class="foot1">
+			<i class="iconfont icon-shouye"></i><br>
+			首页
+		</a>
+		<a href="shiwu.html" class="foot1" style="color: #aa0a0b;">
+			<i class="iconfont icon-weishibie"></i><br>
+			识物
+		</a>
+		<a href="fenlei.html" class="foot1">
+			<i class="iconfont icon-leimupinleifenleileibie--"></i><br>
+			分类
+		</a>
+		<a href="gouwuche.html" class="foot1">
+			<i class="iconfont icon-gouwuche"></i><br>
+			购物车
+		</a>
+		<a href="geren.html" class="foot1">
+			<i class="iconfont icon-geren"></i><br>
+			个人
+		</a>
+	</div>
+
+</body>
+</html>
+
+<script>
+	$(function(){
+	let tj1 = $('.tuijian1');
+	let tp = $('.tuijian1 > a');
+	let tj = $('.tuijian')[0];
+		tj1[0].style.width = tp.outerWidth() * tp.length + 'px';
+		let sum = -1;
+		let sx;
+		tj.addEventListener('touchstart',function(e){
+			let even = e.changedTouches[0];
+			sx = even.pageX;
+			sum ++;
+			if(sum > 4){
+				sum = 0;
+			}
+			tj.addEventListener('touchmove',function(){
+				tj1[0].style.transition= 'left .7s';
+				tj1[0].style.left = -tp.outerWidth() * sum + 20 + 'px';			
+			})		
+		})
+})
+</script>
